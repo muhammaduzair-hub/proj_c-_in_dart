@@ -1,0 +1,6 @@
+# ninja log v5
+0	829	7023889716944670	CMakeFiles/proj-libs.dir/native-lib.cpp.o	74dcd24fa3ad7765
+831	982	7023889718502231	D:/Flutter/tinyrobots/tinyrobots/build/app/intermediates/cxx/Debug/1o3njq6j/obj/armeabi-v7a/libproj-libs.so	d58aeb2cbcf606c9
+6	630	7023927531510619	D:/Flutter/tinyrobots/tinyrobots/build/app/intermediates/cxx/Debug/1o3njq6j/obj/armeabi-v7a/libproj-libs.so	d58aeb2cbcf606c9
+3	635	7024742546481225	CMakeFiles/proj-libs.dir/native-lib.cpp.o	74dcd24fa3ad7765
+635	883	7024742549011475	D:/Flutter/tinyrobots/tinyrobots/build/app/intermediates/cxx/Debug/1o3njq6j/obj/armeabi-v7a/libproj-libs.so	d58aeb2cbcf606c9

@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/aliakram/Desktop/TR/tinyrobots/android/app/.cxx/Debug/1w5e3b3k/armeabi-v7a'
+ninja: no work to do.

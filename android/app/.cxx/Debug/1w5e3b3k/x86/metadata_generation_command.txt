@@ -1,0 +1,23 @@
+                    Executable : /Users/aliakram/Library/Android/sdk/cmake/3.22.1/bin/cmake
+arguments : 
+-H/Users/aliakram/Desktop/TR/tinyrobots/android/app/src/main/cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=16
+-DANDROID_PLATFORM=android-16
+-DANDROID_ABI=x86
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DANDROID_NDK=/Users/aliakram/Library/Android/sdk/ndk/23.1.7779620
+-DCMAKE_ANDROID_NDK=/Users/aliakram/Library/Android/sdk/ndk/23.1.7779620
+-DCMAKE_TOOLCHAIN_FILE=/Users/aliakram/Library/Android/sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/aliakram/Library/Android/sdk/cmake/3.22.1/bin/ninja
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/aliakram/Desktop/TR/tinyrobots/build/app/intermediates/cxx/Debug/1w5e3b3k/obj/x86
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/aliakram/Desktop/TR/tinyrobots/build/app/intermediates/cxx/Debug/1w5e3b3k/obj/x86
+-DCMAKE_BUILD_TYPE=Debug
+-B/Users/aliakram/Desktop/TR/tinyrobots/android/app/.cxx/Debug/1w5e3b3k/x86
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

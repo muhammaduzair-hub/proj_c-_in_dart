@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/Flutter/tinyrobots/tinyrobots/android/app/.cxx/Debug/1o3njq6j/arm64-v8a",
+  "command": "C:\\Users\\MUHAMM~1\\AppData\\Local\\Android\\Sdk\\ndk\\231~1.777\\TOOLCH~1\\llvm\\prebuilt\\WINDOW~1\\bin\\CLANG_~1.EXE --target=aarch64-none-linux-android21 --sysroot=\"C:/Users/Muhammad Uzair/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot\" -Dproj_libs_EXPORTS -ID:/Flutter/tinyrobots/tinyrobots/android/app/src/main/cpp/../../../../distribution/gperf/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -std=gnu++11 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\proj-libs.dir\\native-lib.cpp.o -c D:\\Flutter\\tinyrobots\\tinyrobots\\android\\app\\src\\main\\cpp\\native-lib.cpp",
+  "file": "D:\\Flutter\\tinyrobots\\tinyrobots\\android\\app\\src\\main\\cpp\\native-lib.cpp"
+}
+]

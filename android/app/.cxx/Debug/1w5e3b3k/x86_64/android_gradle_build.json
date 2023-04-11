@@ -1,0 +1,41 @@
+{
+  "buildFiles": [
+    "/Users/aliakram/Desktop/TR/tinyrobots/android/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/aliakram/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/aliakram/Desktop/TR/tinyrobots/android/app/.cxx/Debug/1w5e3b3k/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/aliakram/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/aliakram/Desktop/TR/tinyrobots/android/app/.cxx/Debug/1w5e3b3k/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "proj-libs::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86_64",
+      "artifactName": "proj-libs",
+      "output": "/Users/aliakram/Desktop/TR/tinyrobots/build/app/intermediates/cxx/Debug/1w5e3b3k/obj/x86_64/libproj-libs.so",
+      "runtimeFiles": [
+        "/Users/aliakram/Desktop/TR/tinyrobots/android/distribution/gperf/lib/x86_64/libproj.so",
+        "/Users/aliakram/Desktop/TR/tinyrobots/android/distribution/gperf/lib/x86_64/libsqlite3.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/aliakram/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/aliakram/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

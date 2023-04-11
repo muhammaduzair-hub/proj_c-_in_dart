@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/aliakram/Desktop/TR/tinyrobots/android/app/.cxx/Debug/1w5e3b3k/arm64-v8a",
+  "command": "/Users/aliakram/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/Users/aliakram/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dproj_libs_EXPORTS -I/Users/aliakram/Desktop/TR/tinyrobots/android/app/src/main/cpp/../../../../distribution/gperf/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -std=gnu++11 -g  -fno-limit-debug-info -fPIC -o CMakeFiles/proj-libs.dir/native-lib.cpp.o -c /Users/aliakram/Desktop/TR/tinyrobots/android/app/src/main/cpp/native-lib.cpp",
+  "file": "/Users/aliakram/Desktop/TR/tinyrobots/android/app/src/main/cpp/native-lib.cpp"
+}
+]

@@ -1,0 +1,5 @@
+# ninja log v5
+174	213	1680156437007596749	/Users/aliakram/Desktop/TR/tinyrobots/build/app/intermediates/cxx/Debug/1w5e3b3k/obj/x86/libhello-libs.so	916c2cbe9f8b3434
+1	174	1680156436967635754	CMakeFiles/hello-libs.dir/native-lib.cpp.o	6af84793e75516c0
+0	677	1680172952279992287	CMakeFiles/proj-libs.dir/native-lib.cpp.o	4ce9719f86381bdc
+677	756	1680172952356711178	/Users/aliakram/Desktop/TR/tinyrobots/build/app/intermediates/cxx/Debug/1w5e3b3k/obj/x86/libproj-libs.so	6176d540869f4bb8

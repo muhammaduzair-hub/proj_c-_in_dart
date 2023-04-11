@@ -1,0 +1,7 @@
+Executable : /Users/aliakram/Library/Android/sdk/cmake/3.22.1/bin/ninja
+arguments : 
+-C
+/Users/aliakram/Desktop/TR/tinyrobots/android/app/.cxx/Debug/1w5e3b3k/x86_64
+proj-libs
+jvmArgs : 
+
