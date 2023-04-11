@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/laraib.ishtiaq/StudioProjects/proj_c-_in_dart/android/app/.cxx/Debug/2k3nw2f3/armeabi-v7a",
+  "command": "C:\\Users\\laraib.ishtiaq\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi19 --sysroot=C:/Users/laraib.ishtiaq/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dproj_libs_EXPORTS -IC:/Users/laraib.ishtiaq/StudioProjects/proj_c-_in_dart/android/app/src/main/cpp/../../../../distribution/gperf/include -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -std=gnu++11 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\proj-libs.dir\\native-lib.cpp.o -c C:\\Users\\laraib.ishtiaq\\StudioProjects\\proj_c-_in_dart\\android\\app\\src\\main\\cpp\\native-lib.cpp",
+  "file": "C:\\Users\\laraib.ishtiaq\\StudioProjects\\proj_c-_in_dart\\android\\app\\src\\main\\cpp\\native-lib.cpp"
+}
+]

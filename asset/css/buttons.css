@@ -1,0 +1,129 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:33:00 PM
+    Author     : kk
+*/
+
+button{
+  height: calc( 44px * var(--device-scale) );
+  min-width: calc( 106px * var(--device-scale) );
+  border-radius: calc( 25px * var(--device-scale) );
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-18);
+  line-height: normal;
+  margin: 0;
+  margin-right: calc( 12px * var(--device-scale) );
+  display: inline-block;
+
+  border:none;
+  outline: none;
+  padding-left: calc( 20px * var(--device-scale) );
+  padding-right: calc( 20px * var(--device-scale) );
+  pointer-events: all;
+  white-space: nowrap;
+}
+
+button > img {
+  height: var(--font-18);
+}
+
+button.round {
+  width: calc( 44px * var(--device-scale) );
+  min-width: auto;
+  padding: 0 !important;
+}
+
+button.dark,
+#settings_screen button[disabled],
+#settings_screen button.disabled {
+  color: #FFFFFF;
+  border: none;
+  background-color: #545454;
+}
+
+#settings_screen button[disabled],
+#settings_screen button.disabled {
+  background-color: lightgray;
+}
+
+button.bright,
+button[disabled],
+button.disabled{
+  color: #545454;
+  border: #545454;
+  border-style: solid;
+  border-width: calc( 2px * var(--device-scale) );
+  background-color: transparent;
+}
+button.darkened,
+button[disabled],
+button.disabled{
+  color: #545454;
+  border: #545454;
+  border-style: solid;
+  border-width: calc( 2px * var(--device-scale) );
+  background-color: #262626;
+}
+button.chosen{
+  background-color: #02CC66;
+  color: #FFFFFF;
+  border: #02CC66;
+  border-style: solid;
+  border-width: calc( 2px * var(--device-scale) );
+  /* padding-left: calc( 22px * var(--device-scale) );
+  padding-right: calc( 22px * var(--device-scale) ); */
+}
+
+button.red{
+  background-color: #FF4D4D;
+  color: #FFFFFF;
+  border: none;
+}
+
+button.purple{
+  background-color: #D549E6;
+  color: #FFFFFF;
+  border: none;
+}
+
+@media (max-width:500px) {
+  button{
+    min-width: 85px;
+  }
+}
+
+input.red{
+  background-color: #FF4D4D;
+  color: #FFFFFF;
+}
+
+/* ---- Save buttons ---- */
+.fixed_save_button {
+  position: fixed;
+  bottom: 5px;
+  right: 55px;
+  z-index: 1010;
+}
+
+.fixed_reset_button {
+  position: fixed;
+  bottom: 5px;
+  right: 155px;
+  z-index: 1010;
+}
+
+#totalstation_screen_location_edit_form_add_fixpoint {
+  display: flex;
+  justify-content: center;
+}
+
+#robot_config_buttons{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,254 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:43:59 PM
+    Author     : kk
+*/
+
+/* --- fullscreen popup ---  */
+
+.fullscreen_popup {
+  background-color: #E8E8E8;
+  width:  calc( 100% - 80px );
+  padding: 0;
+  padding-left: calc( 40px * var(--device-scale) );
+  padding-right: calc( 40px * var(--device-scale) );
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+@media only screen and (max-width:1000px){
+  .fullscreen_popup {
+    width:  calc(100% - calc( 80px * var(--device-scale) ) );
+  }
+}
+
+.fullscreen_popup > header {
+  
+}
+
+.fullscreen_popup > header p {
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+.fullscreen_popup h1,
+.fullscreen_popup h2,
+.fullscreen_popup h3,
+.fullscreen_popup h4,
+.fullscreen_popup h5,
+.fullscreen_popup p,
+.fullscreen_popup label {
+  font-family: "ProximaNova";
+  color: #262626;
+}
+.fullscreen_popup h1 {
+  font-weight: 400;
+  font-size: var(--font-40);
+  line-height: var(--font-40);
+  margin: calc( 25px * var(--device-scale) ) 0;
+  width: 100%;
+  text-align: center;
+}
+.fullscreen_popup h2 {
+  font-weight: 600;
+  font-size: var(--font-24);
+  line-height: var(--font-24);
+  margin: 0px;
+  padding-top: calc( 20px * var(--device-scale) );
+  padding-bottom: calc( 20px * var(--device-scale) );
+  padding-left: calc( 5px * var(--device-scale) );
+}
+.fullscreen_popup h3 {
+  font-weight: 400;
+  font-size: var(--font-16);
+  line-height: var(--font-16);
+}
+.fullscreen_popup h4 {
+  font-weight: 700;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  margin: 0;
+}
+.fullscreen_popup h5 {
+  font-weight: 400;
+  font-size: var(--font-12);
+  line-height: var(--font-12);
+}
+
+#superuser_taps_collection h2{
+  color: blue;
+}
+#dealer_taps_collection h2{
+  color: green;
+}
+#developer_taps_collection h2{
+  color: red;
+}
+
+.dont_show_on_cordova h2{
+  color: purple;
+}
+
+.fullscreen_popup p,
+.fullscreen_popup label{
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  margin: 0;
+}
+.fullscreen_popup section > p,
+.fullscreen_popup section > label {
+  margin: 0 0 10px 0;
+}
+.fullscreen_popup section > p:last-child,
+.fullscreen_popup section > label:last-child{
+  margin: 0;
+}
+
+div.close_button_icon{
+  width: calc( 50px * var(--device-scale) );
+  height: calc( 50px * var(--device-scale) );
+  top: calc( 15px * var(--device-scale) );
+  right: calc( 15px * var(--device-scale) );
+  position: absolute;
+  z-index: 9999;
+}
+div.close_button_icon img{
+  width: 50%;
+  height: 50%;
+  background-color: #E8E8E8;
+  padding: 5%;
+  margin: 20%;
+}
+
+.close_button_popup_icon{
+  width: calc( 27px * var(--device-scale) );
+  height: calc( 27px * var(--device-scale) );
+  top: calc( 25px * var(--device-scale) );
+  position: relative;
+  float: right;
+}
+
+#show_pitches{
+  width: 100%;
+  height: calc( 100% - 280px * var(--device-scale) );
+}
+#show_pitches table{
+  margin-bottom: calc( 8px * var(--device-scale) );
+}
+
+.fullscreen_popup section form {
+  margin: 0;
+}
+
+
+/* ---- Lists ---- */
+.number_highlight{
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-26);
+  line-height: var(--font-26);
+  color: #262626;
+
+  border-style: solid;
+  border-width: 2px;
+  width: calc( 39px * var(--device-scale) );
+  height: calc( 39px * var(--device-scale) );
+  border-color: #262626;
+  border-radius: calc( 40px * var(--device-scale) );
+  text-align: center;
+}
+.number_highlight span{
+  display: inline-block;
+  margin-top: calc( 4px * var(--device-scale) );
+}
+
+ol {
+  list-style: none;
+  counter-reset: number_highlight;
+  margin: 0;
+  padding: 0;
+}
+ol li {
+  counter-increment: number_highlight;
+  margin-left:  calc( 10px * var(--device-scale) );
+}
+ol li::before {
+  content: counter(number_highlight);
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-26);
+  color: #262626;
+
+  border-style: solid;
+  border-width: 2px;
+  width: calc( 39px * var(--device-scale) ) !important;
+  height: calc( 39px * var(--device-scale) ) !important;
+  border-color: #262626;
+  border-radius: calc( 40px * var(--device-scale) );
+  text-align: center;
+
+  line-height: calc(var(--font-26) * 1.5);
+  display: inline-block;
+  padding: calc( 4px * var(--device-scale) ) !important;
+  margin-right:  calc( 10px * var(--device-scale) );
+}
+
+
+/* --- Input ---  */
+.fullscreen_popup .checkbox-label{
+  color: #262626;
+  margin-left: calc(5px * var(--device-scale));
+}
+
+
+/* --- options ---  */
+#advance_edit_screen #options_side .job_option{
+  width: calc( 100% - 25px * var(--device-scale) );
+}
+/*.job_option .label_side{
+  text-align: left;
+  width: 100%;
+}*/
+/*.option_float .check_side{
+  text-align: left;
+  width: 100%;
+}*/
+/*.option_float .label_side{
+  text-align: left;
+  width: 1px;
+}*/
+.job_option .check_side{
+  text-align: left;
+  width: 100%;
+}
+.job_option .label_side{
+  text-align: left;
+  width: 1px;
+}
+.job_option h4 {
+  white-space: nowrap;
+  font-family: 'ProximaNova';
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  font-weight: normal;
+  margin: 0;
+}
+
+/* ---- Clean robot ---- */
+#cleaning_screen button{
+  width: calc( 156px * var(--device-scale) );
+  height: calc( 68px * var(--device-scale) );
+  border-radius: calc( 34px * var(--device-scale) );
+}
+
+#cleaning_screen .drawing{
+  height: calc( 130px * var(--device-scale) );
+  margin: 0 10px 10px 5px;
+}

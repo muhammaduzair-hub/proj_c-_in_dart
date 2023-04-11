@@ -1,0 +1,192 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 23, 2020, 4:41:18 PM
+    Author     : kk
+*/
+
+@font-face {
+  font-family:"Gotham";
+  src: url("fonts/GothamBook/ufonts.com_gotham-book.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 400;
+}
+@font-face {
+  font-family:"Gotham";
+  src: url("fonts/GothamMedium/ufonts.com_gotham-medium.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 500;
+}
+@font-face {
+  font-family:"Gotham";
+  src: url("fonts/GothamBold/ufonts.com_gotham-bold.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family:"ProximaNova";
+  src: url("fonts/ProximaNova/ProximaNova-Thin.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 100;
+}
+@font-face {
+  font-family:"ProximaNova";
+  src: url("fonts/ProximaNova/ProximaNova-Light.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 300;
+}
+@font-face {
+  font-family:"ProximaNova";
+  src: url("fonts/ProximaNova/ProximaNova-Reg.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 400;
+}
+@font-face {
+  font-family:"ProximaNova";
+  src: url("fonts/ProximaNova/ProximaNova-Sbold.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 600;
+}
+@font-face {
+  font-family:"ProximaNova";
+  src: url("fonts/ProximaNova/ProximaNova-Bold_0.ttf"); /* TTF file for CSS3 browsers */
+  font-weight: 700;
+}
+
+:root {
+  --device-scale: 1.0;
+
+  /* -- Colors --*/
+  --dark-gray: #262626;
+  --light-gray: #545454;
+  --super-light-gray: #E8E8E8;
+  --green: #02CC66;
+  --blue: #0c60bc;
+  --purple: #a914cc;
+  --red: #FF4D4D;
+
+  /* Feature colors */
+  --default: #FFFFFF;
+  --active: #FFFF00;
+  --copy: #00FF67;
+  --ignore: #400000;
+  --progress: #00E7FF;
+  --special: #FF00FF;
+  --no-access: #666666;
+  --between: #ff7afc;
+  --anti-napping: #3F00FF;
+  --interference-filter: #FF7F00;
+  --no-paint: #00FF67;
+  --start-arrow: #00FF67;
+  --via: #ff7afc;
+
+  /* -- Font sizes --*/
+  --font-12: 12px;
+  --font-15: 15px;
+  --font-16: 16px;
+  --font-18: 18px;
+  --font-20: 20px;
+  --font-22: 22px;
+  --font-24: 24px;
+  --font-26: 26px;
+  --font-40: 40px;
+  --font-60: 60px;
+}
+@media only screen and (max-width:1000px){
+  :root {
+    --device-scale: 0.83;
+
+    /* -- Font sizes --*/
+    --font-12: 10px;
+    --font-15: 12px;
+    --font-16: 13px;
+    --font-18: 15px;
+    --font-20: 17px;
+    --font-22: 18px;
+    --font-24: 20px;
+    --font-26: 22px;
+    --font-40: 33px;
+    --font-60: 50px;
+  }
+}
+
+.gone,
+.supergone{
+  display: none !important;
+}
+
+* {
+  -webkit-font-smoothing: subpixel-antialiased;
+  user-select: none;
+}
+
+body{
+  /*position: fixed;*/
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body.fixed{
+  position: fixed;
+}
+
+.click_through {
+  pointer-events: none;
+}
+
+#loading-screen {
+  opacity: 1.0;
+  -webkit-transition: opacity 1s;
+}
+
+@media (max-width:500px) {
+
+  /* your conditional / responsive CSS inside this condition */
+
+  .hide_on_small {
+    display: none;
+  }
+  .no_padding_on_small{
+    padding: 0;
+  }
+  .full_width_on_small{
+    width: 100%;
+  }
+  .taranis_screen_middle_margin_on_small{
+    margin-left: calc((100% - 250px) / 2) !important;
+  }
+
+}
+
+/* ---- Template images ---- */
+.template-image{
+  display: inline-block; /*Display inline and maintain block characteristics.*/
+  vertical-align: top; /*Makes sure all the divs are correctly aligned.*/
+
+  background-color: transparent;
+  padding: calc( 11px * var(--device-scale) );
+  /*text-align: center;*/
+
+}
+.template-image p{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  color: #262626;
+  margin: 0;
+  /*text-transform: lowercase;*/
+}
+.template-image p:first-letter{
+  /*text-transform: uppercase;*/
+}
+.template_chosen{
+  background-color: #FFFF00;
+  border-radius: calc( 3px * var(--device-scale) );
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

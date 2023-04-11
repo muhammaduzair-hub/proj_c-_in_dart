@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:34:42 PM
+    Author     : kk
+*/
+
+#advance-options-overlay{
+  width: auto;
+  padding-top: calc( 30px * var(--device-scale) );
+  padding-right: calc( 40px * var(--device-scale) );
+  padding-bottom: calc( 15px * var(--device-scale) );
+  padding-left: calc( 15px * var(--device-scale) );
+  bottom: calc( 205px * var(--device-scale) );
+  max-height: calc(100% - 320px );
+}
+@media only screen and (max-width:1000px){
+  #advance-options-overlay {
+    max-height: calc(100% - calc( 320px * var(--device-scale) ) );
+  }
+}
+
+#advance_edit_screen #options_side{
+  width: calc(40% - 10px);
+  height: calc(100% - 100px - 125px*var(--device-scale) - 10px);
+  float: left;
+  margin: calc( 20px * var(--device-scale) + 2*10px + 5px ) 10px 50px 0;
+  overflow: scroll;
+}
+@media only screen and (max-width:1000px){
+  #advance_edit_screen #options_side{
+    margin: calc( 20px * var(--device-scale) + 2*10px + 5px ) 10px 50px 0;
+    height: calc(100% - 100px - 125px*var(--device-scale));
+  }
+}
+.advanced_map_canvas{
+  width: 60%;
+  height: calc(100% - 50px - calc( 125px * var(--device-scale) ));
+  float: left;
+}
+@media only screen and (max-width:1000px){
+  .advanced_map_canvas{
+    height: calc(100% - 50px - calc( 125px * var(--device-scale) ));
+  }
+}
+.wizard_map_canvas{
+  height: calc(100% - 70px - calc( 125px * var(--device-scale) ));
+}
+@media only screen and (max-width:1000px){
+  .wizard_map_canvas{
+    height: calc(100% - 70px - calc( 125px * var(--device-scale) ));
+  }
+}
+#advance_edit_screen #map_header {
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#advance_edit_screen #button_wrap {
+  width: calc( 40% - 10px - 40px );
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.advanced_map_canvas,
+.advanced_map_canvas .map,
+.wizard_map_canvas,
+.wizard_map_canvas .map {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

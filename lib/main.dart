@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tinyrobots/proj_bridge/proj_dart.dart';
+import 'package:tinyrobots/web_view_container.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Tiny Robots (Proj)'),
+      home: WebViewContainer()//const MyHomePage(title: 'Tiny Robots (Proj)'),
     );
   }
 }

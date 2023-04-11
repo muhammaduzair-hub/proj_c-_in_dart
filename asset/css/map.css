@@ -1,0 +1,364 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 4:32:13 PM
+    Author     : kk
+*/
+
+
+
+/* ---- Map ---- */
+.map {
+  background-color: black;
+}
+
+#map{
+  position: absolute;
+  top: calc( 55px * var(--device-scale) );
+  bottom: calc( 115px * var(--device-scale) );
+  width: 100%;
+}
+
+#map .ol-viewport.ol-touch:not(:last-of-type){
+  display: none;
+}
+
+
+/* ---- Which-corner visualiser ---- */
+#which-corner-visualiser p {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  color: white;
+}
+
+#which-corner-visualiser .point_label {
+  min-height: 20px;
+  min-width: 20px;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+#which-corner-visualiser h4 {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  font-weight: normal;
+  color: white;
+
+  margin-top: calc( 6px  * var(--device-scale) );
+  margin-left: calc( 25px  * var(--device-scale) );
+  margin-right: calc( 22px  * var(--device-scale) );
+  margin-bottom: 0;
+}
+
+#which-corner-visualiser #template_image {
+  width: calc(100% - 100px);
+  padding: calc( 20px * var(--device-scale) );
+}
+@media only screen and (max-width:1000px){
+  #which-corner-visualiser #template_image {
+    width: calc(100% - calc( 100px * var(--device-scale) ));
+  }
+}
+
+.overlay {
+  position: absolute;
+  z-index: 3;
+  background-color: #262626;
+}
+
+.info_overlay {
+  position: absolute;
+  bottom: calc( 125px  * var(--device-scale) );
+  left: calc( 20px  * var(--device-scale) );
+  width: calc( 235px  * var(--device-scale) );
+  padding-bottom: calc( 10px  * var(--device-scale) );
+  z-index: 3;
+  background-color: #262626;
+  max-height: calc(100% - 200px );
+  overflow-y: scroll;
+}
+@media only screen and (max-width:1000px) {
+  .info_overlay {
+    max-height: calc(100% - calc( 200px  * var(--device-scale) ) );
+  }
+}
+
+.info_overlay #crosses img {
+  width: calc( 25px  * var(--device-scale) );
+  position: absolute;
+}
+
+#which-corner-visualiser .toppoint {
+  top: calc( 15px  * var(--device-scale) );
+}
+#which-corner-visualiser.bottompoint {
+  top: calc( 306px  * var(--device-scale) );
+}
+#which-corner-visualiser.point1 {
+  left: calc( 10px  * var(--device-scale) );
+}
+#which-corner-visualiser.point2 {
+  left: calc( 94px  * var(--device-scale) );
+}
+#which-corner-visualiser.point3 {
+  left: calc( 115px  * var(--device-scale) );
+}
+#which-corner-visualiser.point4 {
+  left: calc( 198px  * var(--device-scale) );
+}
+
+/* ---- WARNING INDICATOR ---- */
+.warning_indicator {
+  position: absolute;
+  top: calc( 55px * var(--device-scale) + 20px );
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+/* ---- DEALER IS CUSTOMER FLAG ---- */
+#dealer_is_customer_indicator {
+  position: absolute;
+  right: 20px;
+  top: calc( 55px * var(--device-scale) + 20px );
+  text-align: right;
+}
+#dealer_is_customer_indicator p,
+.warning_indicator p {
+  margin: 0;
+  padding: 5px 10px;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-26);
+  line-height: var(--font-26);
+  white-space: nowrap;
+  background: yellow;
+  color: black;
+  border-radius: 3px;
+}
+.dealer_is_customer_indicator .material-icons {
+  vertical-align: bottom;
+}
+
+/* ---- NO INTERNET FLAG ---- */
+.error_indicator{
+  position: absolute;
+  left: 50%;
+  bottom: calc( 125px  * var(--device-scale) );
+}
+.error_indicator #aligner {
+  position: relative;
+  left: -50%;
+}
+.error_indicator p {
+  margin: 0;
+  padding: 5px;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-26);
+  line-height: var(--font-26);
+  white-space: nowrap;
+  background: #f00;
+  color: #fff;
+  text-transform: uppercase;
+}
+.error_indicator span {
+  animation: blinker 1s ease-in-out infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+/* ---- Button/multi select overlay ---- */
+.menu_overlay {
+  /* display: flex;
+  flex-direction: column;
+  padding: 10px; */
+  padding: calc( 10px  * var(--device-scale) );
+  height: auto;
+
+  border: calc( 10px  * var(--device-scale) ) solid #262626;
+  max-height: calc(100% - 200px );
+}
+
+.menu_overlay button,
+.menu_overlay .nav .item {
+  float: left;
+  clear: both;
+  margin: calc( 10px  * var(--device-scale) ) 0;
+  width: 100%;
+}
+
+.menu_overlay button:first-child {
+  margin-top: 0;
+}
+.menu_overlay button:last-child {
+  margin-bottom: 0;
+}
+
+.menu_overlay .nav {
+  margin: 0;
+  padding: 0;
+}
+
+.menu_overlay .nav .item {
+  display: inline-block;
+  font-family: "ProximaNova";
+  font-weight: normal;
+  font-size: var(--font-18);
+  line-height: calc( 44px * var(--device-scale) );
+  color: white;
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #fff;
+}
+.menu_overlay .nav .item:first-child {
+  padding-top: 0;
+}
+.menu_overlay .nav .item:last-child,
+.menu_overlay .nav .item.last-child {
+  border: none;
+  padding-bottom: 0;
+}
+.menu_overlay .nav .draggable--original,
+.menu_overlay .nav .draggable--mirror {
+  display: none;
+}
+
+.menu_overlay.right {
+  right: 10px;
+}
+.menu_overlay.left {
+  left: 10px;
+}
+.menu_overlay.right,
+.menu_overlay.left {
+  max-width: 30%;
+}
+.menu_overlay.center {
+  width: calc(300px * var(--device-scale));
+  margin-left: calc(-300px * var(--device-scale)/2);
+  left: 50%;
+}
+.menu_overlay.top {
+  top: calc(55px * var(--device-scale) + 10px);
+}
+.menu_overlay.bottom {
+  bottom: calc( 125px  * var(--device-scale) );
+}
+
+.menu_overlay .multifield_select_title {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-18);
+  line-height: calc( var(--font-18) + 2px * var(--device-scale) );
+  display: inline-block;
+  clear: both;
+  width: 100%;
+}
+.menu_overlay .multifield_select_type {
+  font-family: "ProximaNova";
+  font-weight: normal;
+  font-size: var(--font-12);
+  line-height: calc(var(--font-12) + 2px * var(--device-scale));
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  /*color: #545454;*/
+}
+.menu_overlay .multifield_select_type {
+  font-family: "ProximaNova";
+  font-weight: normal;
+  font-size: var(--font-12);
+  line-height: calc(var(--font-12) + 2px * var(--device-scale));
+  display: inline-block;
+  clear: both;
+  width: 100%;
+}
+
+.multiselect_job_list {
+  max-height: 300px;
+  max-width: 300px;
+  width: auto;
+}
+
+.multiselect_job_list.menu_overlay {
+  padding: 0;
+}
+
+.multiselect_job_list .number,
+.multiselect_job_list .content-wrap {
+  padding: 5px 0;
+}
+.multiselect_job_list .content-wrap {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.multiselect_job_list .number {
+  width: 40px;
+  float: left;
+}
+.multiselect_job_list .number p {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: calc((var(--font-12) + 2px * var(--device-scale))*2);
+  margin: 0;
+  padding: 2px 0;
+}
+.multiselect_job_list .text {
+  width: 160px;
+  float: left;
+}
+.multiselect_job_list .content-wrap {
+  float: left;
+}
+.multiselect_job_list .reorder-handle {
+  margin-left: 10px;
+  float: right;
+}
+
+.multiselect_job_list .draggable-source--is-dragging .content-wrap {
+/* .multiselect_job_list .draggable-source--is-dragging  { */
+  background-color: #545454;
+}
+
+
+/* ---- Tasks ---- */
+.task_label p {
+  text-align: right;
+  padding: 0px 10px;
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  color: #fff;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* ---- Handles ---- */
+.no_select,
+#map,
+.advanced_map,
+input[type=range]{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

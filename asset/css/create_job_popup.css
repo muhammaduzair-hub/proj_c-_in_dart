@@ -1,0 +1,198 @@
+#create_job_popup {
+    display: grid;
+    grid-template-rows: 80px 60px minmax(auto, 184px) minmax(auto, 184px) 60px;
+    pointer-events: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100% !important;
+    height: 100%;
+    background-color: #E8E8E8;
+}
+
+#create_job_popup>* {
+    max-width: inherit;
+}
+
+#create_job_popup button {
+    padding: 0;
+    margin: 0;
+}
+
+#create_job_popup button {
+    padding: 0;
+    margin: 0;
+}
+
+#create_job_popup .side_scrolling_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 0 0 5px 0;
+    background-color: transparent;
+}
+
+#create_job_popup .tile {
+    min-width: 130px;
+    max-width: 130px;
+    border: 1px solid #b4b4b4;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+#create_job_popup .feature_group_menu_item {
+    display: flex;
+    margin: 3px 3px 3px 3px;
+    min-height: 40px;
+    max-height: 40px;
+    width: fit-content;
+}
+
+#create_job_popup #open_file_button {
+    display: flex;
+    min-width: 95%;
+    min-height: 90%;
+    margin: auto;
+}
+
+#create_job_popup .selection_menu_item {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    text-align: center;
+    margin: 3px 3px 3px 3px;
+    width: fit-content;
+}
+
+#create_job_popup .txt_wrapper {
+    padding: 0 3px 0 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+#create_job_popup .selection_menu_item .txt_wrapper {
+    margin-top: 5px;
+}
+
+#create_job_popup .txt_wrapper h1,
+#create_job_popup .txt_wrapper h2,
+#create_job_popup .txt_wrapper p {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-family: "ProximaNova";
+}
+
+#create_job_popup .txt_wrapper h1 {
+    font-size: 40px;
+}
+
+#create_job_popup .txt_wrapper h2 {
+    font-size: 20px;
+}
+
+#create_job_popup .txt_wrapper p {
+    font-size: 15px;
+}
+
+#create_job_popup .img_wrapper {
+    align-self: center;
+    justify-content: center;
+}
+
+#create_job_popup .marker_wrapper {
+    position: relative;
+}
+
+#create_job_popup .marker_wrapper img {
+    position: absolute;
+    max-width: 15px;
+    max-height: 15px;
+}
+
+#create_job_popup .img_wrapper img {
+    max-width: 130px;
+    max-height: 100px;
+}
+
+
+#create_job_popup #free_hand .img_wrapper img,
+#create_job_popup #fixed .img_wrapper img {
+    min-height: 100px;
+}
+
+#create_job_popup .disabled {
+    opacity: 0.3;
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+#create_job_popup .chosen {
+    border-color: #02CC66;
+    background-color: #0fce6e;
+}
+
+#create_job_popup .chosen p {
+    color: #fff;
+}
+
+#create_job_popup .chosen p {
+    color: #fff;
+}
+
+#create_job_popup #header_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    width: 100%;
+    height: 100%;
+}
+
+#create_job_popup #create_job_message_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#create_job_popup #close_button {
+    margin: auto 20px auto 20px;
+}
+
+#create_job_popup #import_menu_item {
+    width: 96%;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#create_job_popup .free_hand_layout_method {
+    min-height: 110px;
+}
+
+#create_job_popup #job_name_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 auto 0;
+}
+
+#create_job_popup #job_name_label,
+#create_job_popup #template_create_button,
+#create_job_popup #import_create_button,
+#create_job_popup #ok_button {
+    margin: auto 10px auto 10px;
+}
+
+#create_job_popup #job_name {
+    flex-grow: 1;
+}

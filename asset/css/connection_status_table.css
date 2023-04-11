@@ -1,0 +1,23 @@
+
+.connection_status_table td{
+  width: 1px;
+}
+.connection_status_table td:last-child{
+  width: 100%;
+}
+
+.connection_status_table p{
+  margin-right: 20px; 
+}
+
+#wifi_settings_screen p{
+  white-space: nowrap;
+}
+
+#wifi_settings_screen #modem_tab_content table p{
+  margin-right: 20px;
+}
+
+#wifi_settings_screen #tablet_tab_content table p{
+  margin-right: 20px;
+}

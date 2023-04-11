@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\laraib.ishtiaq\StudioProjects\proj_c-_in_dart\android\app\.cxx\Debug\2k3nw2f3\x86'
+ninja: no work to do.

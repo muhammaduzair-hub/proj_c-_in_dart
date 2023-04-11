@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:38:18 PM
+    Author     : kk
+*/
+
+input{
+  user-select: auto;
+}
+
+
+input{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  background-color: #FFFFFF;
+  height: calc( 44px * var(--device-scale) );
+  border-radius: calc( 3px * var(--device-scale) );
+  border: none;
+  padding-left: calc( 11px * var(--device-scale) );
+  padding-right: calc( 11px * var(--device-scale) );
+  outline-color: #02CC66;
+}
+textarea{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  background-color: #FFFFFF;
+  height: calc( 44px * var(--device-scale) );
+  border-radius: calc( 3px * var(--device-scale) );
+  border: none;
+  padding-left: calc( 11px * var(--device-scale) );
+  padding-right: calc( 11px * var(--device-scale) );
+  outline-color: #02CC66;
+}
+
+select{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  background-color: #FFFFFF;
+  height: calc( 44px * var(--device-scale) );
+  border-radius: calc( 3px * var(--device-scale) );
+  border: none;
+  padding-left: calc( 11px * var(--device-scale) );
+  padding-right: calc( 11px * var(--device-scale) );
+  outline-color: #02CC66;
+}
+
+input[disabled] {
+  background-color: lightgray;
+}
+
+input[type=number] {
+  text-align: right;
+}
+
+/* ---- Checkbox ---- */
+input[type=checkbox] {
+  -webkit-appearance: none;
+
+  background: #fff;
+  height: calc( 44px * var(--device-scale) );
+  width: calc( 45px * var(--device-scale) );
+  border: none;
+  border-radius: calc( 4px * var(--device-scale) );
+  display:inline-block;
+  /* margin: calc( 5px * var(--device-scale) ); */
+  /* margin-left: 0; */
+  margin: 0;
+  /* margin-right: 3px; */
+  padding: 0;
+  position: relative;
+
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+/* input[type=checkbox]:after {
+  content: "";
+  position: relative;
+  display: none;
+  left: calc( 13px * var(--device-scale) );
+  top: calc( 5px * var(--device-scale) );
+  width: calc( 11px * var(--device-scale) );
+  height: calc( 22px * var(--device-scale) );
+  border: solid white;
+  border-width: 0 calc( 5px * var(--device-scale) ) calc( 5px * var(--device-scale) ) 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+input[type=checkbox]:checked:after
+{
+  display: block;
+}
+input[type=checkbox][disabled] {
+  background-color: lightgray;
+}
+
+input[type=checkbox]:checked {
+  background-color: #02CC66;
+  background-image: url('img/checkmark/checkmark-44-marg2.png');
+  background-repeat: no-repeat;
+  background-size: calc(50px * var(--device-scale));
+  background-position: center;
+}
+
+input[type="checkbox"].pseudo_checked {
+  background-color: #ffb145;
+  background-image: url("../img/icons/icon_circle_white.svg");
+  background-repeat: no-repeat;
+  background-size: calc(20px * var(--device-scale));
+  background-position: 49% 50%;
+}
+
+/* ---- Radio button ---- */
+input[type=radio] {
+  -webkit-appearance: none;
+
+  background: #fff;
+  height: calc( 44px * var(--device-scale) );
+  width: calc( 44px * var(--device-scale) );
+  border: none;
+  border-radius: 50%;
+  display:inline-block;
+  margin: calc( 5px * var(--device-scale) );
+  margin-left: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+input[type=radio]:after {
+  content: "";
+  position: relative;
+  display: none;
+  top: calc( 14px * var(--device-scale) );
+  left: calc( 14px * var(--device-scale) );
+  height: calc( 15px * var(--device-scale) );
+  width: calc( 15px * var(--device-scale) );
+  border-radius: 50%;
+  background: #fff;
+}
+input[type=radio]:checked
+{
+  background: #02CC66;
+}
+input[type=radio]:checked:after
+{
+  display: block;
+}
+input[type=radio][disabled] {
+  background: lightgray;
+}
+
+/* ---- Trackwheel ---- */
+.track-wheel::-webkit-scrollbar {
+  width: 1pt;
+}
+.track-wheel::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.track-wheel::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* For browsers that do not support gradients */
+  outline: 1px solid slategrey;
+}
+
+.track-wheel{
+  white-space: nowrap; /*Prevents Wrapping*/
+  background-color: white;
+  /*width: calc(100% - 12px);*/
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  border-style: none;
+
+  border-radius: calc( 3px * var(--device-scale) );
+  margin-top: calc( 11px * var(--device-scale) );
+  color: #262626;
+  padding: calc( 6px * var(--device-scale) );
+  position: relative;
+
+}
+
+.track-wheel p:not(:first-of-type){
+  margin-top: 0;
+}

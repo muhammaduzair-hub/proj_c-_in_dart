@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 1, 2018, 3:32:40 PM
+    Author     : peter
+*/
+
+/* ---- Popup ---- */
+.popup{
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #262626;
+  opacity: 0.75;
+  width: 100%;
+  height: 100%;
+}
+.popup-holder{
+  z-index: 1100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.popup-content{
+  min-width: calc( 462px * var(--device-scale) );
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: calc( 12px * var(--device-scale) );
+  background-color: #E8E8E8;
+
+  align-self: center;
+  padding: calc( 32px * var(--device-scale) );
+  padding-top: 0;
+  max-height: calc(100% - 100px);
+}
+
+.popup-content.padding_lr {
+  padding: 0 calc( 32px * var(--device-scale) );
+}
+
+.popup-content h1 {
+  text-align: center;
+
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-26);
+  line-height: var(--font-26);
+  color: #262626;
+  margin-top: calc( 23px * var(--device-scale) );
+  margin-bottom: calc( 23px * var(--device-scale) );
+
+}
+
+.popup-content label {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  color: #262626;
+  font-size: var(--font-16);
+  line-height: var(--font-16);
+  margin-left: calc( 10px * var(--device-scale) );
+}
+.popup-content p {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  color: #262626;
+  font-size: var(--font-16);
+  line-height: var(--font-16);
+  /*margin-bottom: calc( 20px * var(--device-scale) );*/
+}
+.popup-content p,
+.popup-content nav {
+  margin: 0;
+  margin-left: calc( 10px * var(--device-scale) );
+  margin-top: calc( 20px * var(--device-scale) );
+}
+
+.list_in_popup {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 5px;
+  width: 90%;
+  margin: 5px auto 5px auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.list_in_popup p {
+  margin: 1px 0 1px 0;
+  padding: 0;
+}
+
+/* ---- Multifield ---- */
+.multifield_select_popup {
+  min-width: calc( 205px * var(--device-scale) );
+  min-height: calc( 40px * var(--device-scale) );
+  padding: 0;
+  padding-top: calc( 20px  * var(--device-scale) );
+  padding-bottom: calc( 20px  * var(--device-scale) );
+  border: none;
+  border-radius: calc( 20px  * var(--device-scale) );
+  background-color: #F2F2F2;
+}
+
+.multifield_select_popup .select-field {
+  height: calc( 39px  * var(--device-scale) );
+  padding-top: calc( 5px  * var(--device-scale) );
+  padding-left: calc( 20px  * var(--device-scale) );
+  padding-right: calc( 20px  * var(--device-scale) );
+  background-color: #E8E8E8;
+  font-family: "ProximaNova";
+  font-weight: 600;
+  font-size: var(--font-26);
+  line-height: var(--font-26);
+  color: #545454;
+  border:none;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #FFFFFF;
+}
+
+.multifield_select_popup .select-field:first-of-type{
+  border-top: solid;
+  border-width: 1px;
+  border-color: #FFFFFF;
+}
+
+
+/* ---- File loader ---- */
+#load_file_bottom_wrap {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#load_file_bottom_wrap > div {
+  min-height: 1px;
+}
+
+#load_file_bottom_wrap #left {
+  text-align: left;
+  width: 40%;
+  float: left;
+}
+#load_file_bottom_wrap #mid {
+  text-align: center;
+  width: 20%;
+  float: left;
+}
+#load_file_bottom_wrap #right {
+  text-align: right;
+  width: 40%;
+  float: left;
+}
+#load_file_bottom_wrap #right table {
+  float: right;
+}
+#load_file_bottom_wrap h4{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  font-weight: normal;
+  color: black;
+
+  margin-top: calc( 6px * var(--device-scale) );
+  margin-left: calc( 25px * var(--device-scale) );
+  margin-right: calc( 22px * var(--device-scale) );
+  margin-bottom: 0;
+}
+
+/* ---- Template Shop ---- */
+.popup-content .warning {
+  color: red;
+  font-weight: bold;
+}
+
+.popup-content .warning_outline {
+  outline-color: red;
+  border:1px solid red;
+}

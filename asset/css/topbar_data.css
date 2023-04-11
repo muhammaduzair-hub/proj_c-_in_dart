@@ -1,0 +1,120 @@
+/* The topbar_data.css file contains styling for the new topbar starting in RS8 */
+
+/*Topbar CSS*/
+.topbar_data_new{
+  width: 100%;
+  height: calc( 55px * var(--device-scale) );
+  margin: 0;
+  z-index: 5;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+}
+.topbar_data_new h1{
+  float: right;
+  text-align: right;
+  font-family: "Gotham";
+  font-weight: 400;
+  font-size: var(--font-20);
+  margin: 0;
+  padding: 0 calc( 30px * var(--device-scale) );
+  line-height: calc( 55px * var(--device-scale) );
+}
+.topbar_data_new h1 b{
+  font-family: "Gotham";
+  font-weight: 700;
+}
+#icon_container{
+  float: left;
+}
+.display_space{
+  margin: 0 auto;
+  padding: calc( 11px * var(--device-scale) ) calc( 9px * var(--device-scale) );
+  float: left;
+}
+.icon_space{
+  display: inline-block;
+}
+.text_space{
+  display: inline-block;
+}
+.text_space h2{
+  font-size: var(--font-16);
+  font-family: "Gotham";
+  line-height: var(--font-16);
+  margin: 0;
+}
+.text_space p{
+  font-size: var(--font-15);
+  font-family: "ProximaNova";
+  line-height: var(--font-15);
+  margin: 0;
+}
+.text_space .material-icons{
+  font-size: var(--font-16);
+  line-height: var(--font-16);
+  vertical-align: middle;
+  margin: 0;
+}
+
+/*Only for the icons that aren't the battery, settings, or sidebar icons for even formatting*/
+.extra_format_space{
+  padding-right:  calc( 4px * var(--device-scale) );
+}
+
+/*Only for the settings icon*/
+#settings_icon_space{
+  padding: calc( 13px * var(--device-scale) ) calc( 34px * var(--device-scale) );
+  float: left;
+  text-align: center;
+}
+
+/*Only for the robot icon*/
+.topbar_button_sidebar img{
+  height: calc( 28.9px * var(--device-scale) );
+  width: calc( 28.9px * var(--device-scale) );
+  text-align: center;
+}
+
+/*Topbar sidebar CSS*/
+#topbar_overlay{
+  width: calc( 45px * var(--device-scale) );
+  top: calc( 75px * var(--device-scale) ); 
+  left: calc( 25px * var(--device-scale) ); 
+  z-index: 2;
+  position: absolute;
+  color: white;
+  background-color: var(--dark-gray);
+  padding: 0 0 calc( 9px * var(--device-scale) ) 0;
+}
+.topbar_button_sidebar{
+  padding: calc( 12px * var(--device-scale) ) 0 0 0;
+  display: block;
+  text-align: center;
+}
+
+/*Default text colors*/
+#robot_to_tablet_text{
+  color: red;
+}
+#robot_internet_text{
+  color: red;
+}
+#gnss_ts_text{
+  color: red;
+}
+#battery_charge_text{
+  color: red;
+}
+
+/*Default colors for svg icons that need CSS*/
+#user_location, #zoom_out_all{
+  fill: white;
+}
+
+/*Text inside GNSS icon*/
+#gnss_ts_icon_text{
+  font-family: "Gotham";
+  font-size: 9px;
+  font-weight: bold;
+}

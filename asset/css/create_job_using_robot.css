@@ -1,0 +1,109 @@
+#which-corner-visualiser.info_overlay {
+    /* max-height: 100% !important; */
+    /* height: 100%; */
+    /* width: 30%; */
+    padding: 0;
+}
+
+
+
+#create-new-pitch-get-corner .button-container {
+    display: flex;
+}
+
+#create-new-pitch-get-corner #previous_point_button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+#create-new-pitch-get-corner #collect_button {
+    border-radius: 0;
+    margin: 0 3px 0 3px;
+    padding: 0;
+}
+
+#create-new-pitch-get-corner #next_point_button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0;
+}
+
+#create-new-pitch-get-corner .navigate_button {
+    min-width: 50px !important;
+    max-width: 50px !important;
+}
+
+#which-corner-visualiser #template_image.invert {
+    filter: invert(1);
+}
+
+#which-corner-visualiser .adjustable {
+    position: absolute;
+}
+
+#which-corner-visualiser .crosshair {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+#which-corner-visualiser .selection_ring {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 3px solid #009bff;
+}
+
+#which-corner-visualiser .crosshair.orange,
+#create-new-pitch-get-corner .orange {
+    background-color: #ffa200;
+}
+
+#which-corner-visualiser .crosshair.blue,
+#create-new-pitch-get-corner .blue {
+    background-color: #009bff;
+}
+
+#which-corner-visualiser .crosshair.green,
+#create-new-pitch-get-corner .green {
+    background-color: #02CC66;
+    /* background-color: #00ff36; */
+}
+
+#which-corner-visualiser .crosshair_label {
+    font-weight: 900;
+    font-size: 25px;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+#which-corner-visualiser .txt_wrapper {
+    font-family: "ProximaNova";
+}
+
+
+#which-corner-visualiser .txt_wrapper.orange {
+    color: #ffa200;
+}
+
+#which-corner-visualiser .txt_wrapper.blue {
+    color: #009bff;
+}
+
+#which-corner-visualiser .txt_wrapper.green {
+    color: #02CC66;
+    /* color: #00ff36; */
+}
+
+#which-corner-visualiser #legend .txt_wrapper{
+    margin: 0 0 0 5px;
+    height: fit-content;
+}
+
+#which-corner-visualiser #legend #seperator {
+    border: 1px solid #545454;
+    width: 90%;
+    margin: 5px auto 0 auto;
+}

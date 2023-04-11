@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:37:20 PM
+    Author     : kk
+*/
+
+.active-circle{
+  z-index: 100;
+  position: absolute !important;
+  bottom: calc( 185px * var(--device-scale) );
+  right: calc( 33px * var(--device-scale) );
+}
+
+.active-circle.overpopup{
+  z-index: 10000;
+}
+
+.taranis_joystick{
+  z-index: 201;
+}
+
+.joystick{
+  width: calc( 208px * var(--device-scale) );
+  height: calc( 208px * var(--device-scale) );
+
+  background-color: #545454;
+  opacity: 0.9;
+  border-color: #262626;
+  border-style: solid;
+  border-width: calc( 4px * var(--device-scale) );
+  border-radius: calc( 114px * var(--device-scale) );
+}
+
+.emergencystop{
+  width: calc( 190px * var(--device-scale) );
+  height: calc( 190px * var(--device-scale) );
+
+  background-color: #FF4D4D;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-width: calc( 13px * var(--device-scale) );
+  border-radius: calc( 110px * var(--device-scale) );
+
+
+}
+.emergencystop p{
+  font-family: "ProximaNova";
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: var(--font-60);
+  margin: 0;
+  margin-top: calc( 60px * var(--device-scale) );
+  text-align: center;
+}
+
+.joystick_arrow1{
+  height: calc( 208px * var(--device-scale) );
+  margin-left: calc( -11px * var(--device-scale) );
+  padding-left: 50%;
+}
+.joystick_arrow2{
+  position: absolute;
+  width: calc( 208px * var(--device-scale) );
+  margin-top: calc( -11px * var(--device-scale) );
+  padding-top: 50%;
+  top: 0;
+  left: 0;
+}

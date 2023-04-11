@@ -1,0 +1,842 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:51:38 PM
+    Author     : kk
+*/
+
+/* --- Settings screen ---  */
+#settings_icon_space svg {
+  fill: #000;
+}
+#settings_icon_space[disabled] svg {
+  fill: darkgray;
+}
+
+.stress_test_divider {
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+#stress_test_information_readout .sub_header {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#stress_test_information_readout p {
+  /* font-weight: bold; */
+  margin-bottom: 1px;
+}
+
+#stress_test_content {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-top: 1px solid gray;
+  padding-top: 5px;
+}
+
+#stress_test_screen_button_wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#stress_test_screen_button_wrapper button {
+  max-width: 300px;
+}
+
+#stress_test_has_run_times, #stress_test_robot_id{
+  font-weight: bold;
+}
+
+#calibration_menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+#calibration_menu #info_wrapper p {
+  margin-bottom: 7px;
+}
+
+#calibration_menu #info_wrapper :last-child {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#calibration_menu button {
+  width: fit-content;
+  max-width: 200px !important;
+  min-width: 200px !important;
+  margin: 0 auto 10px auto;
+  padding: 0;
+}
+
+.calibration_divider {
+  border-bottom: 1px solid grey;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+
+#calibration_screen_spray_calculate .sub_header {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.calibration_readout_row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+#settings_screen {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow-y: hidden;
+}
+
+#stress_test_title_holder {
+  text-align: center;
+}
+
+#settings_screen_left,
+#settings_screen_left > header,
+#settings_screen_right > header,
+#settings_screen #menu_select > div,
+#settings_screen #menu_select h2 {
+  border-color: #fff;
+  border-width: 1px;
+}
+
+#settings_screen_left,
+#settings_screen_right {
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+#settings_screen_left {
+  width: calc( 300px * var(--device-scale) );
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-right-style: solid;
+}
+#settings_screen_right {
+  flex-grow: 1;
+}
+
+#settings_screen_left > header,
+#settings_screen_right > header,
+#settings_screen #menu_select,
+#settings_screen #menu_select h2 {
+  float: left;
+  width: 100%;
+
+   /* Make room for scrollbar */
+  width: calc(100% - 5px);
+  padding-right:5px;
+}
+
+#settings_screen #menu_select {
+  /*height: calc(100% - (180px - 40px) * var(--device-scale) );*/
+  overflow-y: scroll;
+}
+
+#settings_screen_left > header,
+#settings_screen_right > header,
+#settings_screen #menu_select h2 {
+  border-bottom-style: solid;
+}
+#settings_screen #menu_select > div > h2:last-of-type {
+  border-bottom-style: none;
+}
+#settings_screen #menu_select .user_level_restricted  > h2:first-of-type,
+#settings_screen #menu_select .dont_show_on_cordova  > h2:first-of-type {
+  border-top-style: solid;
+}
+
+#settings_screen #menu_select h2 {
+  padding-left: 15px;
+}
+
+.settings_screen #menu_select .selected{
+  background-color: lightgray;
+}
+.settings_screen #menu_select .disabled{
+  color: #ccc;
+}
+
+#settings_screen #menu_select h2 {
+  font-weight: 700;
+}
+
+#settings_screen #content_area {
+  float: left;
+  flex-grow: 1;
+  padding: calc(30px * var(--device-scale) );
+  padding-bottom: 0;
+  margin-right: 2px; /* To release right scrollbar from screen border */
+}
+
+#settings_screen #content_area .compact-headers h2 {
+  padding-bottom: calc( 10px * var(--device-scale) );
+}
+
+.settings_screen button{
+  /* margin-bottom: calc( 20px * var(--device-scale) ); */
+  margin-bottom: calc( 5px * var(--device-scale) );
+}
+.settings_screen section > p:last-child button {
+  margin-bottom: 0;
+}
+
+.settings_screen #projection_input input,
+.settings_screen #projection_input button {
+  margin-bottom: calc( 20px * var(--device-scale) );
+}
+
+table.small-lines{
+  line-height: calc( 40px * var(--device-scale) );
+}
+
+table.normal-lines{
+  line-height: calc( 60px * var(--device-scale) );
+}
+
+p.normal-lines{
+  line-height: calc( 60px * var(--device-scale) ) !important;
+}
+
+table.normal-lines .half-height-text p,
+table.compact-lines{
+  line-height: calc( 30px * var(--device-scale) );
+}
+table.small-lines button,
+table.normal-lines button,
+table.compact-lines button {
+  margin-bottom: 0;
+}
+
+.settings_screen .warning {
+  color: red;
+  font-weight: bold;
+}
+
+.settings_screen .warning_outline {
+  outline-color: red;
+  border:1px solid red;
+}
+.settings_screen .working {
+  color: green;
+  font-weight: bold;
+}
+.invalid_value_div {
+  position: relative;
+  z-index: 5;
+}
+.invalid_value_bubble {
+  position: absolute !important;
+  z-index: 6 !important;
+  background-color: red;
+  color: black;
+  border-top-left-radius: calc( 25px * var(--device-scale) );
+  border-bottom-left-radius: calc( 25px * var(--device-scale) );
+  font-family: 'ProximaNova';
+  font-weight: 400;
+  height: calc( 30px * var(--device-scale) );
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: calc( 30px * var(--device-scale) );
+}
+.invalid_value_addition {
+  position: absolute !important;
+  z-index: 5 !important;
+  background-color: red;
+  border-top-left-radius: calc( 25px * var(--device-scale) );
+  border-bottom-left-radius: calc( 25px * var(--device-scale) );
+  height: calc( 30px * var(--device-scale) );
+  width: calc( 30px * var(--device-scale) );
+}
+.invalid_value_button {
+  position: absolute !important;
+  z-index: 7 !important;
+  width: calc( 20px * var(--device-scale) );
+  height: calc( 20px * var(--device-scale) );
+  background-color: #E8E8E8;
+  position: absolute;
+  border-radius: calc( 25px * var(--device-scale) );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invalid_value_button_img {
+  width: 50%;
+  height: 50%;
+}
+.settings_screen .working_outline {
+  outline-color: green;
+  border:1px solid green;
+}
+
+/* ---- Close button ---- */
+#settings_screen div.close_button_icon{
+  top: 0;
+  right: 0;
+}
+
+/* ---- Breadcrumb ---- */
+#breadcrumb_wrap {
+  float: left;
+  width: 100%;
+  clear: both;
+  height: calc(15px * var(--device-scale) * 2 + var(--font-24));
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#breadcrumb {
+  float: left;
+  padding: calc(15px * var(--device-scale));
+  font-size: var(--font-20);
+  line-height: var(--font-24);
+  font-weight: 400;
+}
+#breadcrumb img {
+  height: var(--font-24);
+  padding-left: 10px;
+  float: left;
+  vertical-align:top;
+  transform: scaleX(-1);
+}
+#breadcrumb span {
+  display: inline-block;
+  vertical-align:top;
+}
+
+#breadcrumb .delim {
+  margin-top: calc( -1px * var(--device-scale) );
+  padding: 0 5px;
+}
+
+
+/* ---- Input ---- */
+/*.settings_screen input[type=number],
+.settings_screen input[type=text] {
+  background: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--light-gray);
+  width: 20px;
+}*/
+
+
+/* ---- Tabs ---- */
+.tab {
+  border: solid;
+  border-width: thin;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  padding: calc( 5px  * var(--device-scale) );
+  float: left;
+}
+
+.tab.chosen {
+  background-color: #02CC66;
+  color: #02CC66;
+}
+
+.tab.tabs3 {
+  width: calc(100%/3 - 12px);
+}
+.tab.tabs4 {
+  width: calc(100%/4 - 12px);
+}
+
+/* ---- Sections ---- */
+#settings_screen #content_area h2 {
+  padding-left: 0;
+}
+#settings_screen #content_area > div > header p {
+  margin-bottom: calc( 20px * var(--device-scale) );
+}
+#settings_screen #content_area div section {
+  border-style: solid;
+  border-color: #aaa;
+  border-width: 2px 0 0 0;
+  padding: 20px 0;
+  float: left;
+  width: 100%;
+}
+
+#settings_screen #content_area div section.not-first-child {
+  border-style: solid !important;
+  border-width: 2px 0 0 0 !important;
+  border-color: #aaa !important;
+  padding: 20px 0 !important;
+}
+#settings_screen #content_area div section:first-of-type,
+#settings_screen #content_area div .first-child
+{
+  padding-top: 0;
+  border-top: 0;
+}
+#settings_screen #content_area div section.gone {
+  padding: 0;
+  border: 0;
+}
+#settings_screen #content_area div header h2,
+#settings_screen #content_area div section h2 {
+  padding-top: 20px;
+}
+#settings_screen #content_area div header h2:first-child,
+#settings_screen #content_area div section h2:first-child {
+  padding-top: 0;
+}
+#settings_screen #content_area div section table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#settings_screen #content_area div section table.row-colors tr td {
+  padding: 3px 0;
+}
+#settings_screen #content_area div section table.row-colors tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---- Section tables ---- */
+#settings_screen #content_area .checkbox_table td:nth-child(odd) {
+  /*width: 10%;*/
+  width: 0 !important;
+}
+
+#settings_screen #content_area .checkbox_table td:nth-child(even) {
+  width: 40%;
+}
+#settings_screen #content_area .checkbox_table td[colspan="2"] {
+  width: 50%;
+}
+#settings_screen #content_area .checkbox_table td[colspan="4"] {
+  width: 100%;
+}
+#settings_screen #content_area .checkbox_table td:last-child {
+  width: 90%;
+}
+
+#settings_screen #content_area .checkbox_table tr:first-child td,
+#settings_screen #content_area .checkbox_table tr:last-child td {
+  padding: 0 0;
+}
+
+#settings_screen #content_area .checkbox_table tr td {
+  padding: 5px 0;
+}
+
+/* ---- Options sections ---- */
+#settings_screen #content_area div section.options table,
+#settings_screen #content_area div section.options table tr {
+  height: calc( 60px * var(--device-scale) );
+  line-height: calc( 60px * var(--device-scale) );
+  width: 100%;
+}
+#settings_screen #content_area div section.options table tr {
+  border-bottom: 1px solid #ccc;
+}
+#settings_screen #content_area div section.options table tr:last-of-type,
+#settings_screen #content_area div section.options table tr.last-child {
+  border-bottom: none;
+}
+
+#settings_screen #content_area div section.options table td:first-child,
+#settings_screen #content_area div section.options.checkboxes table td:nth-child(2) {
+  /* The label td */
+
+  width: 50%;
+  padding-left: 10px;
+}
+
+#settings_screen #content_area div section.options table td:last-child {
+  /* The input td */
+
+  width: 50%;
+  white-space: nowrap;
+  text-align: right;
+  /*line-height: calc( 60px * var(--device-scale) );*/
+}
+
+#settings_screen #content_area div section.options table td label,
+#settings_screen #content_area div section.options table td p {
+  width: 100%;
+  white-space: normal;
+  line-height: normal;
+  display: inline-block;
+}
+#settings_screen #content_area div section.options table td input[type=text],
+#settings_screen #content_area div section.options table td input[type=number],
+#settings_screen #content_area div section.options table td input[type=tel],
+#settings_screen #content_area div section.options table td select {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+#settings_screen #content_area div section.options table td button {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*vertical-align: text-top;*/
+}
+#settings_screen #content_area div section.options table td button:last-child {
+  margin-right: 0;
+}
+
+#settings_screen #content_area div section.options.checkboxes table td:first-child {
+  width: 1px;
+  /*padding-left: 0;*/
+}
+
+/* ---- List sections ---- */
+
+#settings_screen #content_area div.list,
+#settings_screen #content_area div.list section.row {
+  width: 100%;
+}
+#settings_screen #content_area div.list section.row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+#settings_screen #content_area div.list section.row:last-child {
+  margin-bottom: calc(20px*var(--device-scale));
+}
+#settings_screen #content_area div.list section.row div {
+  flex-grow: 1;
+}
+#settings_screen #content_area div.list section.row header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#settings_screen #content_area div.list section.row header h2 {
+  flex-grow: 1;
+  padding-bottom: 0;
+}
+#settings_screen #content_area div.list section.row button {
+  margin-bottom: 0;
+}
+
+#settings_screen #content_area div.list section.row p.title {
+  word-break: break-all;
+}
+#settings_screen #content_area div.list section.row p.abstract {
+  font-size: var(--font-18);
+  line-height: var(--font-18);
+  font-weight: 300;
+  text-align: justify;
+}
+
+#settings_screen #content_area div.list section.row aside {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+#settings_screen #content_area div.list section.row aside .flex_fill {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#settings_screen #content_area div.list section.row aside .flex_no_fill {
+  flex-grow: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#settings_screen #content_area div.list section.row aside.buttons {
+}
+
+#settings_screen #content_area div.list section.row aside.buttons button:last-child {
+  margin-right: 0;
+}
+
+#settings_screen #content_area div.list section.row aside.toggle {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+#settings_screen #content_area div.list section.row aside.arrows {
+}
+
+#settings_screen #content_area div.list section.row aside.arrows img {
+  width: 20px;
+}
+#settings_screen #content_area div.list section.row aside.arrows img.up {
+}
+#settings_screen #content_area div.list section.row aside.arrows img.down {
+  transform: scaleY(-1);
+}
+
+#settings_screen #content_area div.list #actions {
+  width: 100%;
+  float: left;
+}
+
+#settings_screen #content_area > div div.list section.row,
+#settings_screen #content_area > div div.list section.row.not-first-child {
+  border-width: 1px 0 0 0 !important;
+  border-color: #ccc !important;
+  padding: 5px 0 !important;
+}
+
+#settings_screen #content_area div.list section.row > div > p:first-child {
+  line-height: calc( 44px * var(--device-scale) );
+}
+
+#settings_screen #content_area div.list section.row > div > header:last-child h2 {
+  line-height: calc( 44px * var(--device-scale) );
+}
+
+/*#settings_screen #content_area div.list input[type=checkbox],
+#settings_screen #content_area div.list input[type=radio] {
+  margin-bottom: margin: calc( 5px * var(--device-scale) );
+}*/
+
+/* ---- Communication ---- */
+/*#wifi_help_text_1 {
+  padding-top: 20px;
+}*/
+
+#wifi_help_text_2 {
+  font-weight: bold;
+}
+
+/* ---- Wifi password ---- */
+.material-icon-on-input {
+  float: right;
+  width: 24px;
+  height: 24px;
+  margin-top: calc( -44px * var(--device-scale) ); /* same as input field height */
+  padding: 6px;
+  position: relative;
+}
+input:disabled + .material-icon-on-input {
+  display: none;
+}
+
+.sign_button {
+  display: inline;
+  width: calc( 35px * var(--device-scale) ) !important;
+  height: calc( 35px * var(--device-scale) ) !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+}
+table .sign_button {
+  vertical-align: baseline !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ---- Position ---- */
+#position_projection-flexdatalist,
+#custom_projections_load_list-flexdatalist {
+  width: 100%;
+}
+
+span.item.item-alias{
+  font-weight: bold;
+}
+
+#projection_recent_header
+{
+  float: left;
+  width: 50%;
+}
+#custom_projections_button_wrap button {
+  margin: 0;
+}
+
+/* ---- Show pitches ---- */
+
+.pitch_collection {
+  float:left;
+  position:relative;
+}
+
+/* ---- Calibration ---- */
+#calibration_canvas_container
+{
+  position: relative;
+}
+
+/* ---- Developer authenticator ---- */
+#developer_mode_authenticator p {
+  font-size: 45px;
+  line-height: 45px;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+#developer_mode_authenticator p span {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+/* ---- Total Station ---- */
+#fixpoints {
+  width: 59%;
+  float: left;
+}
+#fixpoints_map_canvas {
+  width: 40%;
+  float: right;
+}
+
+#fixpoints table {
+  width: 98%;
+  margin: 0;
+  padding: 0;
+}
+table.align-center th,
+table.align-center td {
+  text-align: center;
+}
+#fixpoints table input {
+  width: calc(100% - 10px*var(--device-scale));
+}
+#fixpoints table td li,
+#fixpoints table td li::before {
+  margin: 0;
+}
+#fixpoints table td button {
+  margin: 0;
+}
+/* ---- Template shop ---- */
+.templateshop_list_image_wrapper {
+  width: 20%;
+  text-align: center;
+  float: right;
+}
+
+.templateshop_list_image {
+  height: 40px;
+  transform: scale(1.1);
+}
+
+.templateshop_list_image.rotate {
+  transform: rotate(90deg) scale(1.2);
+}
+
+.template_shop_preview_image {
+  height: 250px;
+  padding: 5px;
+}
+
+.template_shop_preview_image.rotate {
+  transform: rotate(90deg) scale(1.5);
+}
+
+.templateshop .price {
+  width: auto !important;
+  padding-right: 10px;
+}
+.templateshop#template_details .price {
+  font-weight: bold;
+}
+.templateshop_buy_now {
+  min-width: 100px;
+}
+#available_templates_header {
+  width:80%;
+  float:left;
+}
+#currency_selector {
+  width:20%;
+  float: right;
+  margin-bottom: calc( 20px * var(--device-scale) );
+}
+#template_details_description {
+  margin-bottom: 10px;
+}
+.available_templates_vat_notice {
+  text-align: right;
+}
+.available_templates_vat_notice_text {
+  color: red !important;
+}
+#redeem_voucher_init_button {
+  float: right;
+  margin-right: 0;
+  margin-top: 30px;
+}
+#templateshop_redeem_voucher_screen {
+}
+#voucher_wrapper {
+  width: 100%;
+  text-align: center;
+}
+templateshop_redeem_voucher_screen h2 {
+  width: 100%;
+  text-align: center;
+}
+#voucher_code {
+  width: calc( 250px * var(--device-scale) );
+  margin: 20px auto;
+  display: inline-block;
+  font-family: "Courier New", Courier, "Lucida Console", Monaco, monospace;
+  font-size: var(--font-22);
+  line-height: var(--font-22);
+}
+#voucher_submit {
+  min-width: 180px;
+  margin: 10px auto;
+  display: block;
+}
+#voucher_code_wrap,
+#voucher_submit_wrap {
+  width: 100%;
+}
+#voucher_open_scanner {
+  margin-left: calc( 20px * var(--device-scale) );
+}
+
+#bluetooth_status_value{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  height: calc( 44px * var(--device-scale) );
+  border-radius: calc( 3px * var(--device-scale) );
+  border: none;
+  outline-color: #02CC66;
+  display: flex;
+  align-items: center;
+}
+/* ---- Changelog ---- */
+.changelog{
+  width:100%;
+  height: calc(570px*var(--device-scale));
+  overflow:none;
+  border:none;
+}

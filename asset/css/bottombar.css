@@ -1,0 +1,232 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:33:30 PM
+    Author     : kk
+*/
+
+.bottombar{
+  background-color: #262626;
+  color: white;
+  width: 100%;
+  height: calc( 115px * var(--device-scale) );
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  z-index: 5;
+}
+.bottombar > :first-child{
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.bigbottombar{
+  height: calc( 194px * var(--device-scale) );
+}
+@media (max-width:500px) {
+  .bottombar{
+    display: none;
+  }
+}
+
+
+.button-container{
+  margin-top: calc( 35.5px * var(--device-scale) );
+  margin-right: calc( 15px * var(--device-scale) );
+  white-space: nowrap;
+}
+
+.bottombar h3{
+  margin: 0;
+  margin-top: calc( 19px * var(--device-scale) );
+  margin-left: calc( 25px * var(--device-scale) );
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bottombar h4{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  font-weight: normal;
+  color: white;
+
+  margin-top: calc( 6px * var(--device-scale) );
+  margin-left: calc( 25px * var(--device-scale) );
+  margin-right: calc( 22px * var(--device-scale) );
+  margin-bottom: 0;
+}
+
+.bottombar .info_div{
+  margin-left: calc( 22px * var(--device-scale) );
+  white-space: nowrap;
+  margin-top: calc( 11px * var(--device-scale) );
+}
+
+.bottombar .info_div img{
+  height: calc( 20px * var(--device-scale) );
+  float: left;
+  margin-right: calc( 8px * var(--device-scale) );
+}
+
+#copy-track input,
+#offset-track input {
+  width: calc( 100px * var(--device-scale) );;
+  text-align: right;
+}
+
+/* ---- Edit pitch ---- */
+#edit-pitch #adjustable_holder{
+  /* float:left; */
+  /* width: calc(100% - 200px ); */
+  /* height: calc( 133px * var(--device-scale) ); */
+}
+@media only screen and (max-width:1000px){
+  #edit-pitch #adjustable_holder {
+    /* width: calc(100% - calc( 200px * var(--device-scale) )); */
+  }
+}
+
+/* ----  Progress bar ---- */
+.progressbar{
+  width: calc( 300px * var(--device-scale) );
+  height: calc( 36px * var(--device-scale) );
+  border-radius: calc( 25px * var(--device-scale) );
+  background-color: #545454;
+  overflow: hidden;
+}
+.progressbar .loaded{
+  height: calc( 36px * var(--device-scale) );
+  background-color: #02CC66;
+
+  /*-webkit-transition: width 5s;*/ /* Safari */
+  /*transition: width 5s;*/
+}
+
+/* ---- Input ----  */
+.bottombar .checkbox-label{
+  color: #FFFFFF;
+}
+
+/* ---- Measure screen ----  */
+#measurement_legend{
+  height: 100%;
+  width: calc(350px * var(--device-scale));
+  background-color: #262626;
+  z-index: 4;
+  position: fixed;
+}
+
+#measurement_svg{
+  height: 100%;
+  width: 100%;
+  margin-left: calc(-1px * var(--device-scale));
+}
+
+.measurements{
+  margin-left: 150px;
+  color: #FFFFFF;
+}
+
+#OtO_measurement{
+  transform: translate(75px, calc(-612px * var(--device-scale)));
+}
+
+#MtM_measurement{
+  transform: translate(75px, calc(-553px * var(--device-scale)));
+}
+
+#ItI_measurement{
+  transform: translate(75px, calc(-494px * var(--device-scale)));
+}
+
+#MtO_measurement{
+  transform: translate(75px, calc(-435px * var(--device-scale)));
+}
+
+#MtI_measurement{
+  transform: translate(75px, calc(-378px * var(--device-scale)));
+}
+
+#measurement_legend_margin{
+  width: calc(350px * var(--device-scale));
+  height: calc(5px * var(--device-scale));
+  transform: translate(0px, calc(-909px * var(--device-scale)));
+  position: fixed;
+  z-index: 5;
+  background-color: #262626;
+}
+@media only screen and (max-width:1000px){
+    #OtO_measurement{
+      transform: translate(50px, calc(-573px * var(--device-scale)));
+    }
+    
+    #MtM_measurement{
+      transform: translate(50px, calc(-521px * var(--device-scale)));
+    }
+    
+    #ItI_measurement{
+      transform: translate(50px, calc(-470px * var(--device-scale)));
+    }
+    
+    #MtO_measurement{
+      transform: translate(50px, calc(-417px * var(--device-scale)));
+    }
+    
+    #MtI_measurement{
+      transform: translate(50px, calc(-366px * var(--device-scale)));
+    }
+    #measurement_legend{
+      height: 100%;
+      width: calc(320px * var(--device-scale));
+      background-color: #262626;
+      z-index: 4;
+      position: fixed;
+    }
+    #measurement_svg{
+      height: 100%;
+      width: 100%;
+      margin-left: calc(-1px * var(--device-scale));
+    }
+
+    #measurement_legend_margin{
+      width: calc(320px * var(--device-scale));
+      height: calc(5px * var(--device-scale));
+      transform: translate(0px, calc(-860px * var(--device-scale)));
+      position: fixed;
+      z-index: 5;
+      background-color: #262626;
+    }
+}
+
+.measure_mode{
+  width: calc(200px * var(--device-scale));
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #545454;
+  white-space: pre-wrap;
+}
+
+#measurement_info{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.measurement_info{
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  font-weight: normal;
+  color: white;
+}

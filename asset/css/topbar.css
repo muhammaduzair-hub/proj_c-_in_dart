@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 24, 2020, 3:31:55 PM
+    Author     : kk
+*/
+
+.topbar{
+  width: 100%;
+  height: calc( 55px * var(--device-scale) );
+  margin: 0;
+  z-index: 5;
+  position: absolute;
+  color: white;
+  background-color: #0c60bc;
+}
+.tlm .topbar {
+  background-color: #10a34b;
+}
+.ts .topbar{
+  background-color: #faba1a;
+}
+
+.tlm .topbar #topbar-colors div:nth-child(odd) {
+  background-color: #11ab4f;
+}
+.tlm .topbar #topbar-colors div:nth-child(even) {
+  background-color: #10a34b;
+}
+.tlm .topbar #topbar-colors div:nth-child(even) {
+  background-color: #10a34b;
+}
+
+.topbar h1{
+  position: absolute;
+  z-index: 2;
+  width: calc(100% * 13 / 13);
+
+  text-align: center;
+  top: 0;
+  font-family: "Gotham";
+  font-weight: 500;
+  font-size: var(--font-20);
+  line-height: var(--font-20);
+  margin: 0;
+  margin-top: calc( 18px * var(--device-scale) );
+  padding: 0;
+}
+.topbar h1 b{
+  font-family: "Gotham";
+  font-weight: 700;
+}
+.topbar #topbar-colors{
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-size: var(--font-15);
+  line-height: var(--font-15);
+  color: #FFFFFF;
+}
+.topbar #topbar-colors div {
+  width: calc(100% / 13);
+  float: left;
+  text-align: center;
+  height: 100%;
+}
+
+
+
+.topbar-icon{
+  height: calc( 26px * var(--device-scale) );
+  margin-top: calc( 13px * var(--device-scale) );
+}
+.topbar-icon-small{
+  height: calc( 15px * var(--device-scale) );
+  margin-top: calc( 12.5px * var(--device-scale) );
+}
+.topbar-bad{
+  color: #FFD41D;
+}
+.ts .topbar-bad{
+  color: var(--purple);
+}
+.topbar-critical{
+  color: red;
+}
+.topbar-none{
+  color: #CECECE;
+}
+.ts .topbar-none{
+  color: var(--light-gray);
+}
+

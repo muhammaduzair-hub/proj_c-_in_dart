@@ -1,0 +1,354 @@
+# Universal
+WGS84:+init=epsg:4326
+
+# UTM
+UTM01:+proj=utm +zone=01 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM02:+proj=utm +zone=02 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM03:+proj=utm +zone=03 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM04:+proj=utm +zone=04 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM05:+proj=utm +zone=05 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM06:+proj=utm +zone=06 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM07:+proj=utm +zone=07 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM08:+proj=utm +zone=08 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM09:+proj=utm +zone=09 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM10:+proj=utm +zone=10 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM11:+proj=utm +zone=11 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM12:+proj=utm +zone=12 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM13:+proj=utm +zone=13 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM14:+proj=utm +zone=14 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM15:+proj=utm +zone=15 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM16:+proj=utm +zone=16 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM17:+proj=utm +zone=17 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM18:+proj=utm +zone=18 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM19:+proj=utm +zone=19 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM20:+proj=utm +zone=20 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM21:+proj=utm +zone=21 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM22:+proj=utm +zone=22 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM23:+proj=utm +zone=23 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM24:+proj=utm +zone=24 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM25:+proj=utm +zone=25 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM26:+proj=utm +zone=26 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM27:+proj=utm +zone=27 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM28:+proj=utm +zone=28 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM29:+proj=utm +zone=29 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM30:+proj=utm +zone=30 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM31:+proj=utm +zone=31 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM32:+proj=utm +zone=32 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM33:+proj=utm +zone=33 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM34:+proj=utm +zone=34 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM35:+proj=utm +zone=35 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM36:+proj=utm +zone=36 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM37:+proj=utm +zone=37 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM38:+proj=utm +zone=38 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM39:+proj=utm +zone=39 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM40:+proj=utm +zone=40 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM41:+proj=utm +zone=41 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM42:+proj=utm +zone=42 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM43:+proj=utm +zone=43 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM44:+proj=utm +zone=44 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM45:+proj=utm +zone=45 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM46:+proj=utm +zone=46 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM47:+proj=utm +zone=47 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM48:+proj=utm +zone=48 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM49:+proj=utm +zone=49 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM50:+proj=utm +zone=50 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM51:+proj=utm +zone=51 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM52:+proj=utm +zone=52 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM53:+proj=utm +zone=53 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM54:+proj=utm +zone=54 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM55:+proj=utm +zone=55 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM56:+proj=utm +zone=56 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM57:+proj=utm +zone=57 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM58:+proj=utm +zone=58 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM59:+proj=utm +zone=59 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM60:+proj=utm +zone=60 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+
+UTM01S:+proj=utm +zone=01 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM02S:+proj=utm +zone=02 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM03S:+proj=utm +zone=03 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM04S:+proj=utm +zone=04 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM05S:+proj=utm +zone=05 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM06S:+proj=utm +zone=06 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM07S:+proj=utm +zone=07 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM08S:+proj=utm +zone=08 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM09S:+proj=utm +zone=09 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM10S:+proj=utm +zone=10 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM11S:+proj=utm +zone=11 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM12S:+proj=utm +zone=12 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM13S:+proj=utm +zone=13 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM14S:+proj=utm +zone=14 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM15S:+proj=utm +zone=15 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM16S:+proj=utm +zone=16 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM17S:+proj=utm +zone=17 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM18S:+proj=utm +zone=18 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM19S:+proj=utm +zone=19 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM20S:+proj=utm +zone=20 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM21S:+proj=utm +zone=21 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM22S:+proj=utm +zone=22 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM23S:+proj=utm +zone=23 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM24S:+proj=utm +zone=24 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM25S:+proj=utm +zone=25 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM26S:+proj=utm +zone=26 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM27S:+proj=utm +zone=27 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM28S:+proj=utm +zone=28 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM29S:+proj=utm +zone=29 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM30S:+proj=utm +zone=30 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM31S:+proj=utm +zone=31 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM32S:+proj=utm +zone=32 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM33S:+proj=utm +zone=33 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM34S:+proj=utm +zone=34 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM35S:+proj=utm +zone=35 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM36S:+proj=utm +zone=36 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM37S:+proj=utm +zone=37 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM38S:+proj=utm +zone=38 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM39S:+proj=utm +zone=39 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM40S:+proj=utm +zone=40 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM41S:+proj=utm +zone=41 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM42S:+proj=utm +zone=42 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM43S:+proj=utm +zone=43 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM44S:+proj=utm +zone=44 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM45S:+proj=utm +zone=45 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM46S:+proj=utm +zone=46 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM47S:+proj=utm +zone=47 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM48S:+proj=utm +zone=48 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM49S:+proj=utm +zone=49 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM50S:+proj=utm +zone=50 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM51S:+proj=utm +zone=51 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM52S:+proj=utm +zone=52 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM53S:+proj=utm +zone=53 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM54S:+proj=utm +zone=54 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM55S:+proj=utm +zone=55 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM56S:+proj=utm +zone=56 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM57S:+proj=utm +zone=57 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM58S:+proj=utm +zone=58 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM59S:+proj=utm +zone=59 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+UTM60S:+proj=utm +zone=60 +south +ellps=WGS84 +datum=WGS84 +units=m +no_defs
+
+UTM28:+init=epsg:25828
+UTM29:+init=epsg:25829
+UTM30:+init=epsg:25830
+UTM31:+init=epsg:25831
+UTM32:+init=epsg:25832
+UTM33:+init=epsg:25833
+UTM34:+init=epsg:25834
+UTM35:+init=epsg:25835
+UTM36:+init=epsg:25836
+UTM37:+init=epsg:25837
+UTM38:+init=epsg:25838
+
+UTM49S:+init=epsg:32749
+UTM50S:+init=epsg:32750
+UTM51S:+init=epsg:32751
+UTM52S:+init=epsg:32752
+UTM53S:+init=epsg:32753
+UTM54S:+init=epsg:32754
+UTM55S:+init=epsg:32755
+UTM56S:+init=epsg:32756
+UTM57S:+init=epsg:32757
+UTM58S:+init=epsg:32758
+UTM59S:+init=epsg:32759
+UTM60S:+init=epsg:32760
+
+# Danish
+# http://www.sdl6.dk/sdl6_faq.html
+DKTM1:+init=epsg:4093
+DKTM2:+init=epsg:4094
+DKTM3:+init=epsg:4095
+DKTM4:+init=epsg:4096
+
+KP2000J:+init=epsg:2196
+KP2000S:+init=epsg:2197
+KP2000B:+init=epsg:2198
+
+# Experimental
+# http://lists.maptools.org/pipermail/proj/2012-June/006323.html
+SYSTEM34J:+proj=omerc +lonc=9.46 +lat_0=56.13333333 +x_0=-266906.229 +y_0=189617.957 +k=0.9999537 +alpha=-0.76324 +gamma=0.0 +datum=WGS84
+SYSTEM34Z:+proj=omerc +lonc=11.81 +lat_0=55.3333332 +x_0=-118947.024 +y_0=101112.545 +k=0.9999855 +alpha=1.190005 +gamma=0.0 +datum=WGS84
+SYSTEM34S:+proj=omerc +lonc=11.81 +lat_0=55.3333332 +x_0=-118947.024 +y_0=101112.545 +k=0.9999855 +alpha=1.190005 +gamma=0.0 +datum=WGS84
+
+# Irish
+# https://en.wikipedia.org/wiki/Irish_Transverse_Mercator#Comparison_of_ITM.2C_Irish_Grid_and_UTM
+IRENET95:+init=epsg:2157
+IRENET:+init=epsg:2157
+ITM:+init=epsg:2157
+TM65:+init=epsg:29902
+TM75:+init=epsg:29903
+IG:+init=epsg:29903
+
+# United Kingdom
+OSGB:+init=epsg:27700
+
+# Netherlands
+RDOLD:+init=epsg:28991
+RDNEW:+init=epsg:28992
+RD2008:+init=epsg:28992 +nadgrids=rdtrans2008.gsb
+
+# Belgium
+LAMB72:+init=epsg:31370
+LAMB08:+init=epsg:3812
+LAMB05:+init=epsg:3447
+LAMB72GS:+init=epsg:31370 +nadgrids=xyGridLb72.gsb
+LAMB08GS:+init=epsg:3812 +nadgrids=xyGridLb72.gsb
+LAMB05GS:+init=epsg:3447 +nadgrids=xyGridLb72.gsb
+
+# Belgium
+LAMB72:+init=epsg:31370
+LAMB08:+init=epsg:3812
+LAMB05:+init=epsg:3447
+
+# Singapore
+SVY21TM:+init=epsg:3414
+
+
+# New Zealand
+NZTM00:+init=epsg:2193
+NZMG49:+init=epsg:27200
+CITM2000:+init=epsg:3789
+CI71MG:+init=epsg:5518
+CITM2000:+init=epsg:3793
+RITM2000:+init=epsg:3791
+AITM2000:+init=epsg:3790
+CICTM2000:+init=epsg:3764
+AKTM2000:+init=epsg:3788
+TIMATM00:+init=epsg:2126
+GAWLTM2000:+init=epsg:2125
+OKARTM2000:+init=epsg:2122
+HOKITM2000:+init=epsg:2121
+MARLTM2000:+init=epsg:2120
+AMURTM2000:+init=epsg:2119
+GREYTM2000:+init=epsg:2118
+BULLTM2000:+init=epsg:2117
+KARATM2000:+init=epsg:2116
+NELSTM2000:+init=epsg:2115
+COLLTM2000:+init=epsg:2114
+WELLTM2000:+init=epsg:2113
+WAIRTM2000:+init=epsg:2112
+WANGTM2000:+init=epsg:2111
+TUHITM2000:+init=epsg:2110
+TARATM2000:+init=epsg:2109
+TAIETM2000:+init=epsg:2131  
+OBSETM2000:+init=epsg:2130
+YORKTM2000:+init=epsg:2129
+NICHTM2000:+init=epsg:2128
+LINDTM2000:+init=epsg:2127
+PLEATM2000:+init=epsg:2124
+JACKTM2000:+init=epsg:2123
+PLENTM2000:+init=epsg:2106
+EDENTM2000:+init=epsg:2105
+BLUFTM2000:+init=epsg:2132
+HAWKTM2000:+init=epsg:2108
+TIMATM1949:+init=epsg:27226
+GAWLTM1949:+init=epsg:27225
+OKARTM1949:+init=epsg:27222
+HOKITM1949:+init=epsg:27221
+MARLTM1949:+init=epsg:27220
+AMURTM1949:+init=epsg:27219
+GREYTM1949:+init=epsg:27218
+BULLTM1949:+init=epsg:27217
+KARATM1949:+init=epsg:27216
+NELSTM1949:+init=epsg:27215
+COLLTM1949:+init=epsg:27214
+WELLTM1949:+init=epsg:27213
+WAIRTM1949:+init=epsg:27212
+WANGTM1949:+init=epsg:27211
+TUHITM1949:+init=epsg:27210
+TARATM1949:+init=epsg:27209
+OBSETM1949:+init=epsg:27230
+YORKTM1949:+init=epsg:27229
+NICHTM1949:+init=epsg:27228
+LINDTM1949:+init=epsg:27227
+PLEATM1949:+init=epsg:27224
+JACKTM1949:+init=epsg:27223
+POVETM1949:+init=epsg:27207
+PLENTM1949:+init=epsg:27206
+EDENTM1949:+init=epsg:27205
+BLUFTM1949:+init=epsg:27232
+HAWKTM1949:+init=epsg:27208
+
+
+# Western Australia
+ALB94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.8833333 +lat_0=0 +k_0=1.00000440 +x_0=50000.000 +y_0=4000000
+BRO94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=122.3333333 +lat_0=0 +k_0=1.00000298 +x_0=50000.000 +y_0=2200000
+BCG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.4333333 +lat_0=0 +k_0=0.99999592 +x_0=50000.000 +y_0=3900000
+CARN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=113.6666667 +lat_0=0 +k_0=0.99999796 +x_0=50000.000 +y_0=2950000
+CIG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=105.6250000 +lat_0=0 +k_0=1.00002514 +x_0=50000.000 +y_0=1300000
+CKIG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=96.8750000 +lat_0=0 +k_0=0.99999387 +x_0=50000.000 +y_0=1500000
+COL94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.9333333 +lat_0=0 +k_0=1.00001900 +x_0=40000.000 +y_0=4000000
+ESP94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=121.8833333 +lat_0=0 +k_0=1.00000550 +x_0=50000.000 +y_0=3950000
+EXM94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=114.0666667 +lat_0=0 +k_0=1.00000236 +x_0=50000.000 +y_0=2650000
+GCG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=114.5833333 +lat_0=0 +k_0=1.00000628 +x_0=50000.000 +y_0=3350000
+GOLD94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=121.5000000 +lat_0=0 +k_0=1.00004949 +x_0=60000.000 +y_0=3700000
+JCG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=114.9833333 +lat_0=0 +k_0=1.00000314 +x_0=50000.000 +y_0=3550000
+KAR94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.9333333 +lat_0=0 +k_0=0.99999890 +x_0=50000.000 +y_0=2450000
+KUN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=128.7500000 +lat_0=0 +k_0=1.00001650 +x_0=50000.000 +y_0=2000000
+LCG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.3666667 +lat_0=0 +k_0=1.00000157 +x_0=50000.000 +y_0=3650000
+MRCG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.1666667 +lat_0=0 +k_0=1.00000550 +x_0=50000.000 +y_0=3950000
+PCG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.8166667 +lat_0=0 +k_0=0.99999906 +x_0=50000.000 +y_0=3800000
+PHG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=118.6000000 +lat_0=0 +k_0=1.00000135 +x_0=50000.000 +y_0=2400000
+BIO94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.2500000 +lat_0=0 +k_0=1.00000220 +x_0=60000.000 +y_0=2600000
+KAL94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=114.3152778 +lat_0=0 +k_0=1.00001400 +x_0=55000.000 +y_0=3600000
+AGLIME94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.4166667 +lat_0=0 +k_0=1.00003174 +x_0=50000.000 +y_0=3750000
+HUG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.2333333 +lat_0=0 +k_0=1.00003472 +x_0=50000.000 +y_0=4000000
+NWM94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=119.7166667 +lat_0=0 +k_0=1.00008862 +x_0=50000.000 +y_0=2850000
+SHAWRVR94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=119.2500000 +lat_0=0 +k_0=1.00001084 +x_0=50000.000 +y_0=2500000
+TOMPRICE94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.7333333 +lat_0=0 +k_0=1.00010103 +x_0=50000.000 +y_0=2750000
+BULLA94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.8666667 +lat_0=0 +k_0=1.00006235 +x_0=50000.000 +y_0=3670000
+PINDARTS94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.8000000 +lat_0=0 +k_0=1.00004321 +x_0=50000.000 +y_0=3400000
+NULLAGINE94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.1000000 +lat_0=0 +k_0=1.00006128 +x_0=50000.000 +y_0=2681676
+RAVEN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.0333333 +lat_0=0 +k_0=1.00003190 +x_0=50000.000 +y_0=4000000
+EXMXT94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=114.0166667 +lat_0=0 +k_0=1.00000569 +x_0=50000.000 +y_0=3000000
+COOROW94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.9166667 +lat_0=0 +k_0=1.00003504 +x_0=50000.000 +y_0=3600000
+GIRALIA94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=114.7166667 +lat_0=0 +k_0=1.00000424 +x_0=50000.000 +y_0=2700000
+NANU94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=115.4166667 +lat_0=0 +k_0=1.00000786 +x_0=50000.000 +y_0=2700000
+CRANBK94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.5166667 +lat_0=0 +k_0=1.00003582 +x_0=50000.000 +y_0=4100000
+MORLEY94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.4666667 +lat_0=0 +k_0=1.00000126 +x_0=50000.000 +y_0=4100000
+H9BRIVER94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.9833333 +lat_0=0 +k_0=1.00000990 +x_0=50000.000 +y_0=4130000
+KOJON94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.0500000 +lat_0=0 +k_0=1.00003818 +x_0=50000.000 +y_0=4000000
+EASTALB94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=118.3333333 +lat_0=0 +k_0=1.00001271 +x_0=50000.000 +y_0=4000000
+NARROGIN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.1666667 +lat_0=0 +k_0=1.00004541 +x_0=50000.000 +y_0=3900000
+BRDGETWN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.1500000 +lat_0=0 +k_0=1.00003425 +x_0=50000.000 +y_0=4000000
+BROOKTON94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.0000000 +lat_0=0 +k_0=1.00004132 +x_0=50000.000 +y_0=3800000
+H1BANWIL94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.6666667 +lat_0=0 +k_0=1.00004447 +x_0=50000.000 +y_0=3900000
+AJANA94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=114.6750000 +lat_0=0 +k_0=1.00002763 +x_0=50000.000 +y_0=3284000
+MEEKA94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=118.3000000 +lat_0=0 +k_0=1.00007644 +x_0=50000.000 +y_0=3000000
+DERBY94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=123.6833333 +lat_0=0 +k_0=1.00000393 +x_0=50000.000 +y_0=2200000
+BOONDI94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.2833333 +lat_0=0 +k_0=1.00006387 +x_0=50000.000 +y_0=3690000
+GOLD94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=121.5000000 +lat_0=0 +k_0=1.00004949 +x_0=60000.000 +y_0=3700000
+MARVEL94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=119.6000000 +lat_0=0 +k_0=1.00006238 +x_0=50000.000 +y_0=3660000
+WUBIN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.7000000 +lat_0=0 +k_0=1.00004572 +x_0=50000.000 +y_0=3600000
+WB94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.9500000 +lat_0=0 +k_0=0.99987900 +x_0=446901.042 +y_0=2879773
+ER94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.9500000 +lat_0=0 +k_0=0.99990000 +x_0=446904.020 +y_0=2879828
+CPG94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=119.1666667 +lat_0=0 +k_0=1.00009900 +x_0=69861.900 +y_0=2699844
+OB18PG:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.9500000 +lat_0=0 +k_0=0.99997400 +x_0=446912.395 +y_0=2880019
+JIM94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=123.0000000 +lat_0=0 +k_0=0.99902100 +x_0=299693.230 +y_0=2598341
+YAR94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.0000000 +lat_0=0 +k_0=0.99857100 +x_0=-299813.000 +y_0=2297503
+YAN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.0000000 +lat_0=0 +k_0=0.99953000 +x_0=-200122.216 +y_0=2599668
+HBI94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=116.9977778 +lat_0=0 +k_0=0.99966900 +x_0=-100382.427 +y_0=2300002
+NP94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=121.2233333 +lat_0=0 +k_0=0.99908000 +x_0=474985.401 +y_0=2878189
+WHL94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=120.0833333 +lat_0=0 +k_0=1.00007860 +x_0=50000.000 +y_0=2800000
+BROCKMAN94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=117.2500000 +lat_0=0 +k_0=1.00009600 +x_0=40000.000 +y_0=2650000
+CULLINIA94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=123.1288889 +lat_0=0 +k_0=1.00004448 +x_0=50000.000 +y_0=3775000
+WESTANGELAS94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=118.7652778 +lat_0=0 +k_0=1.00012509 +x_0=50000.000 +y_0=2800000
+BAC94:+proj=tmerc +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +no_defs  +lon_0=150.0 +lat_0=0 +k_0=0.9996 +x_0=-109.960 +y_0=3099815.329
+
+
+MGA50: +init=epsg:28350
+MGA51: +init=epsg:28351
+MGA52: +init=epsg:28352
+MGA53: +init=epsg:28353
+MGA54: +init=epsg:28354
+MGA55: +init=epsg:28355
+MGA56: +init=epsg:28356
+BCSG02: +init=epsg:3113
+
+# Germany
+GK2: +init=epsg:31466
+GK3: +init=epsg:31467
+GK4: +init=epsg:31468
+GK5: +init=epsg:31469
+
+
+# Swiss
+LV03: +init=epsg:21781
+LV95: +init=epsg:2056
+LV95GS: +init=epsg:2056 +nadgrids=CHENYX06_etrs.gsb

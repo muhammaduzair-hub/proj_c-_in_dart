@@ -1,0 +1,60 @@
+class ProjectorFactory {
+    constructor(from, to) {
+        this._from = from;
+        this._to = to;
+
+        this._cache = new Map();
+
+        let funcToMemoize;
+        if (!this._from && !this._to) {
+            funcToMemoize = (a, b) => ProjectorFactory.getProjector(a, b);
+        }
+        else if (!this._from) {
+            funcToMemoize = (a) => ProjectorFactory.getProjector(a, this._to);
+        }
+        else if (!this._to) {
+            funcToMemoize = (b) => ProjectorFactory.getProjector(this._from, b);
+        }
+
+        this.getProjector = memoize(funcToMemoize, { cache: { create: this._create.bind(this) } });
+    }
+
+    get from( ) { return this._from; }
+    set from(_) { }
+
+    get to( ) { return this._to; }
+    set to(_) { }
+
+    _create() {
+        const store = this._cache;
+        return {
+            has(key) {
+                return store.has(key)
+            },
+            get(key) {
+                return store.get(key)
+            },
+            set(key, value) {
+                store.set(key, value)
+            }
+        }
+    }
+
+    clear() {
+        this._cache.forEach(projector => projector.release());
+        this._cache.clear();
+    }
+
+    destroy() {
+        this.clear();
+        delete this;
+    }
+
+    static getProjector(from, to) {
+       console.log("************************************ 5 from to",from,to);
+        if (!from) {
+            throw "Need a 'from' projection!";
+        }
+        return new ProjectorClass(from, to);
+    }
+}
